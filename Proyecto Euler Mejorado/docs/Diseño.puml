@@ -1,0 +1,26 @@
+@startuml Diseño
+class Programa
+
+
+Menu *- Metodo 
+Programa --> Menu 
+
+Programa : +Iniciar() Void
+Menu : -metodo: Metodo
+Menu : -x0: double
+Menu : -y0: double
+Menu : -h: double
+Menu : -x_objetivo: double
+Menu : +mostrarMenu(): void
+
+
+Metodo : -x0: double
+Metodo : -y0: double
+Metodo : -h: double
+Metodo : -x_objetivo: double
+Metodo : +funcion(): double
+Metodo : +eulerModif(): double
+Metodo : +setVariables(x0: double, y0: double, h: double, x_objetivo: double): void
+
+
+@enduml
